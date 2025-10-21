@@ -1,0 +1,24 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  .header-title {
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0d3e6f;
+    }
+  }
+
+  .header-profile {
+    .profile {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+}

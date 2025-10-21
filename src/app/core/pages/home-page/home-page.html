@@ -1,0 +1,20 @@
+<p class="home" appBgColor="#0f3a6523" appAppTooltip="Testinng tooltip">home-page works!</p>
+
+<button (click)="modalRef.onToggle(true)" class="btn-show-modal">open directive modal</button>
+
+<div class="modal-backdrop" *ngIf="modalRef.isVisible"></div>
+
+<ng-template appAppModal #modalRef="modal">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h4>Modal Title</h4>
+      <button (click)="modalRef.onHidModal()" class="icon-close">X</button>
+    </div>
+    <div class="modal-body">
+      <p>This modal is managed by a structural directive!</p>
+    </div>
+    <div class="modal-footer">
+      <button (click)="modalRef.onHidModal()">Close</button>
+    </div>
+  </div>
+</ng-template>

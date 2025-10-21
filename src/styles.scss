@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #ffffff;
+  color: #0d0c5b;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1040; /* Ensure it's behind the modal dialog */
+}
+
+.modal-dialog {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1050; /* Ensure it's on top */
+  min-width: 300px;
+}
+
+/* 💡 Optional: Prevent scrolling on the body */
+.modal-open {
+  overflow: hidden;
+}
